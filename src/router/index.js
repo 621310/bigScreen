@@ -22,7 +22,12 @@ Vue.use(VueRouter)
     path: '/bigScreenTest',
     name: 'bigScreenTest',
     component: () => import( '../views/bigScreenTest.vue')
-  }
+  },
+  {
+    path: '/ganntTest',
+    name: 'ganntTest',
+    component: () => import( '../views/ganntTest.vue')
+  },
 ]
 
 const router = new VueRouter({

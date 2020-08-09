@@ -11,6 +11,11 @@ import dataV from '@jiaminghi/data-view'
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 
+import wlGantt from 'wl-gantt'
+import "wl-gantt/lib/wl-gantt.css"
+
+Vue.use(wlGantt)
+
 Vue.use(dataV)
 
 Vue.use(ElementUI);
