@@ -5,8 +5,13 @@ import Home from '../views/Home.vue'
 Vue.use(VueRouter)
 
   const routes = [
+    {
+      path: '/',
+      name: 'index',
+      component: () => import(/* webpackChunkName: "about" */ '../views/index.vue')
+    },
   {
-    path: '/',
+    path: '/home',
     name: 'Home',
     component: Home
   },
