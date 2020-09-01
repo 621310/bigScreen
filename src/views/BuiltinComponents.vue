@@ -1,6 +1,6 @@
 <template>
     <div>
-        <component :is="component001"></component>
+        <!-- <component :is="component001"></component> -->
 
         <transition name="fade" mode="out-in" appear>
             <component :is="view"></component>
@@ -42,10 +42,19 @@ export default {
 }
 </script>
 <style scoped>
-.fade-enter-active, .fade-leave-active {
-  transition: opacity 2s;
+.fade-enter-active{
+    /* fadeInLeft:向右淡入 */
+   animation: fadeInLeft 1s;   
 }
-.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
-  opacity: 2;
+.fade-leave-to{
+    animation: bounceOut 1s; 
 }
+
+
+/* .fade-enter-active, .fade-leave-active {
+  animation: fadeInLeft 1s;
+}
+.fade-enter, .fade-leave-to {
+  animation: fadeInLeft 1s ;
+} */
 </style>

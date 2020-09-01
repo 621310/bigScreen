@@ -14,6 +14,10 @@ import 'element-ui/lib/theme-chalk/index.css';
 import wlGantt from 'wl-gantt'
 import "wl-gantt/lib/wl-gantt.css"
 
+import animated from 'animate.css' 
+
+Vue.use(animated)
+
 Vue.use(wlGantt)
 
 Vue.use(dataV)
