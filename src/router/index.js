@@ -33,6 +33,16 @@ Vue.use(VueRouter)
     name: 'ganntTest',
     component: () => import( '../views/ganntTest.vue')
   },
+  {
+    path: '/computed',
+    name: 'computed',
+    component: () => import( '../views/computed.vue')
+  },
+  {
+    path: '/BuiltinComponents',
+    name: 'BuiltinComponents',
+    component: () => import( '../views/BuiltinComponents.vue')
+  },
 ]
 
 const router = new VueRouter({
