@@ -25,6 +25,9 @@ components:{
             money:100,
         }
     },
+    mounted(){
+        console.info("vm.$parent是啥",this.$parent)
+    },
     methods:{
         change(value){
             this.money = value
