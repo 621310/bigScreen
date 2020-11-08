@@ -8,7 +8,24 @@ Vue.use(VueRouter)
     {
       path: '/',
       name: 'index',
-      component: () => import(/* webpackChunkName: "about" */ '../views/index.vue')
+      component: () => import(/* webpackChunkName: "about" */ '../views/index.vue'),
+      children:[
+        {
+          path: '/',
+          name: 'index',
+          component: () => import( '../views/blog/index.vue')
+        },
+        {
+          path: '/classification',
+          name: 'classification',
+          component: () => import( '../views/blog/classification.vue')
+        },
+        {
+          path: '/my',
+          name: 'my',
+          component: () => import( '../views/blog/my.vue')
+        },
+      ]
     },
   {
     path: '/home',
@@ -34,9 +51,9 @@ Vue.use(VueRouter)
     component: () => import( '../views/ganntTest.vue')
   },
   {
-    path: '/computed',
-    name: 'computed',
-    component: () => import( '../views/computed.vue')
+    path: '/vuexTest',
+    name: 'vuexTest',
+    component: () => import( '../views/vuexTest.vue')
   },
   {
     path: '/BuiltinComponents',

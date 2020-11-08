@@ -1,5 +1,22 @@
 <template>
-    <div style="height:200px;background:green">
-        第一个页面，
+    <div>
+        <router-view />
+
+        <van-tabbar route>
+            <van-tabbar-item replace to="/" icon="home-o">首页</van-tabbar-item>
+            <van-tabbar-item replace to="/classification" icon="apps-o">分类</van-tabbar-item>
+            <van-tabbar-item replace to="/my" icon="contact">我的</van-tabbar-item>
+        </van-tabbar>
     </div>
 </template>
+<script>
+    import { Tabbar, TabbarItem,Button  } from 'vant';
+
+    export default {
+        components:{
+            [Tabbar.name]:Tabbar,
+            [TabbarItem.name]:TabbarItem,
+            [Button.name]:Button,
+        }
+    }
+</script>
