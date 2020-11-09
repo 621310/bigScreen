@@ -9,5 +9,9 @@
 </template>
 
 <style>
-
+#app{
+  width: 100%;
+  height: 100%;
+  background: rgb(247,248,250);
+}
 </style>
