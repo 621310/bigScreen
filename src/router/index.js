@@ -60,6 +60,11 @@ Vue.use(VueRouter)
     name: 'BuiltinComponents',
     component: () => import( '../views/BuiltinComponents.vue')
   },
+    {
+      path: '/gdMap_demo',
+      name: 'gdMap_demo',
+      component: () => import( '../views/gdMap_demo.vue')
+    },
 ]
 
 const router = new VueRouter({
