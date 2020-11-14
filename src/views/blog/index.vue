@@ -5,10 +5,13 @@
 </template>
 
 <script>
+    import {test001} from '../../request/api'
     export default {
         name: "index",
         mounted(){
-            console.log(process)
+            test001({}).then(res =>{
+                console.log(res)
+            })
         }
     }
 </script>
