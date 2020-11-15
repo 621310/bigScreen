@@ -12,6 +12,8 @@
             test001({}).then(res =>{
                 console.log(res)
             })
+            this.$store.dispatch("getUserInfoAsync")
+            console.info("store",this.$store)
         }
     }
 </script>

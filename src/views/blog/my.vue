@@ -10,7 +10,7 @@
             </template>
         </van-cell>
 
-        <van-cell style="margin-top: 10px" title="昵称" is-link :value="this.$store.state.username" />
+        <van-cell style="margin-top: 10px" title="昵称" is-link :value="this.$store.state.user.username" />
         <van-cell title="手机号" is-link value="15972938888" />
         <van-cell title="生日" is-link value="2020/11/09" />
         <van-cell title="码龄" is-link :value="this.$store.getters.getCodeAge" @click="show = true"/>
