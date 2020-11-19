@@ -14,7 +14,7 @@
     </div>
 </template>
 <script>
-import test from "./index"
+import test from "./blog/index"
 import parent from '@/components/parent.vue'
 
 

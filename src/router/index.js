@@ -7,8 +7,13 @@ Vue.use(VueRouter)
   const routes = [
     {
       path: '/',
+      name: 'login',
+      component: () => import( '../views/blog/login.vue')
+    },
+    {
+      path: '/index',
       name: 'index',
-      component: () => import(/* webpackChunkName: "about" */ '../views/index.vue'),
+      component: () => import(/* webpackChunkName: "about" */ '../views/blog/index.vue'),
       children:[
         {
           path: '/',

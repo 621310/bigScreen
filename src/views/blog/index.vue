@@ -1,23 +1,22 @@
 <template>
     <div>
-            哒哒哒
+        <router-view />
+
+        <van-tabbar route>
+            <van-tabbar-item replace to="/" icon="home-o">首页</van-tabbar-item>
+            <van-tabbar-item replace to="/classification" icon="apps-o">分类</van-tabbar-item>
+            <van-tabbar-item replace to="/my" icon="contact">我的</van-tabbar-item>
+        </van-tabbar>
     </div>
 </template>
-
 <script>
-    import {test001} from '../../request/api'
+    import { Tabbar, TabbarItem,Button  } from 'vant';
+
     export default {
-        name: "index",
-        mounted(){
-            test001({}).then(res =>{
-                console.log(res)
-            })
-            this.$store.dispatch("getUserInfoAsync")
-            console.info("store",this.$store)
+        components:{
+            [Tabbar.name]:Tabbar,
+            [TabbarItem.name]:TabbarItem,
+            [Button.name]:Button,
         }
     }
 </script>
-
-<style scoped>
-
-</style>
