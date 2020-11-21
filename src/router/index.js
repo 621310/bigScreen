@@ -16,9 +16,9 @@ Vue.use(VueRouter)
       component: () => import(/* webpackChunkName: "about" */ '../views/blog/index.vue'),
       children:[
         {
-          path: '/',
-          name: 'index',
-          component: () => import( '../views/blog/index.vue')
+          path: '/bloghome',
+          name: 'bloghome',
+          component: () => import( '../views/blog/home.vue')
         },
         {
           path: '/classification',

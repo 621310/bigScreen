@@ -2,6 +2,7 @@ import {getUserInfo} from "../../request/api";
 
 export default {
     state: {
+        token:"ddddss",
         tmp:'我是store state中定义的一个变量，可以在全局组件中使用',
         num:64,
         username:'爱吃橘子的张三丰',
@@ -38,7 +39,7 @@ export default {
         //能够出发mutations,可以有异步操作
         getUserInfoAsync({ commit }){
             getUserInfo({}).then((res) =>{
-                console.log(res)
+                // console.log(res)
                 commit("initUserInfo",res.data)
             })
             console.log(commit)
