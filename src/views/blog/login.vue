@@ -50,13 +50,14 @@
         methods: {
             onSubmit(values) {
                 console.log('submit', values);
-                userlogin(values).then( (res) => {
-                    console.log(res)
-                    if(res.status === 200){
-                        this.$router.push("/index")
-                        this.$store.dispatch('getUserInfoAsync')
-                    }
-                })
+                this.$router.push("/index")
+                // userlogin(values).then( (res) => {
+                //     console.log(res)
+                //     if(res.status === 200){
+                //         this.$router.push("/index")
+                //         this.$store.dispatch('getUserInfoAsync')
+                //     }
+                // })
             },
         },
     }
