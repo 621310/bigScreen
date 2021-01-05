@@ -14,7 +14,7 @@
     </div>
 </template>
 <script>
-import test from "./blog/index"
+import test from "./blog/home"
 import parent from '@/components/parent.vue'
 
 
@@ -57,7 +57,7 @@ export default {
             }else{
                 this.view = this.$options.components.test
             }
-           
+
         }
     }
 }
@@ -65,10 +65,10 @@ export default {
 <style scoped>
 .fade-enter-active{
     /* fadeInLeft:向右淡入 */
-   animation: fadeInLeft 1s;   
+   animation: fadeInLeft 1s;
 }
 .fade-leave-to{
-    animation: bounceOut 1s; 
+    animation: bounceOut 1s;
 }
 
 

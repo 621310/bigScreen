@@ -2,6 +2,9 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
+import './common/index' //全局引入组件
+import less from 'less'
+
 
 import Antd from 'ant-design-vue'
 import 'ant-design-vue/dist/antd.css'
@@ -31,6 +34,8 @@ Vue.use(wlGantt)
 Vue.use(dataV)
 
 Vue.use(ElementUI);
+
+Vue.use(less)
 
 
 Vue.config.productionTip = false

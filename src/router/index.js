@@ -16,6 +16,11 @@ Vue.use(VueRouter)
       component: () => import(/* webpackChunkName: "about" */ '../views/blog/index.vue'),
       children:[
         {
+          path: '/',
+          name: 'redirect',
+          redirect: '/bloghome'
+        },
+        {
           path: '/bloghome',
           name: 'bloghome',
           component: () => import( '../views/blog/home.vue')
