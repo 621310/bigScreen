@@ -37,6 +37,12 @@ Vue.use(VueRouter)
         },
       ]
     },
+    {
+      path: '/list',
+      name: 'list',
+      component: () => import(/* webpackChunkName: "about" */ '../views/blog/list.vue')
+    },
+
   {
     path: '/home',
     name: 'Home',

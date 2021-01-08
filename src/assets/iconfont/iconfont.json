@@ -1,0 +1,44 @@
+{
+  "id": "2199860",
+  "name": "no name",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "689262",
+      "name": "类目 品类 分类 类别",
+      "font_class": "leimupinleifenleileibie",
+      "unicode": "e7f9",
+      "unicode_decimal": 59385
+    },
+    {
+      "icon_id": "841850",
+      "name": "飞机",
+      "font_class": "feiji",
+      "unicode": "e6ae",
+      "unicode_decimal": 59054
+    },
+    {
+      "icon_id": "851705",
+      "name": "分享",
+      "font_class": "fenxiang",
+      "unicode": "e619",
+      "unicode_decimal": 58905
+    },
+    {
+      "icon_id": "1246340",
+      "name": "主页",
+      "font_class": "home",
+      "unicode": "e626",
+      "unicode_decimal": 58918
+    },
+    {
+      "icon_id": "1263283",
+      "name": "分享",
+      "font_class": "fenxiang1",
+      "unicode": "e61c",
+      "unicode_decimal": 58908
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+/*less 全局变量*/
+@deep: ~">>>";
+
+@pageBackColor: #f9f9f9;
+@shadowColor: #fff;
+@themeColor:#3388ff;
+@decColor:#8a8a8a;
+@btnBack:rgba(51,136,255, .09);
+@upColor: #FF4858;
+@downColor: #00CC81;
+@defaultColor: #e5e9f2;
+@borderColor: #ebedf0;
+@barTextColor: #c9bebe;
+
+
+
+
+.hw (@h, @w){
+  width: @w;
+  height: @h;
+}
+
+.flex(@justify: center, @align: center) {
+  display: flex;
+  justify-content: @justify;
+  align-items: @align;
+}
+
+//垂直居中
+.iconPosition(@r: 10px){
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: @r;
+}
+
+//文字省略号展示
+.textEllipsis(){
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+/*字体加粗*/
+.boldFont(@size: inherit, @w: 500) {
+  font-size: @size;
+  font-weight: @w;
+  font-family: "PingFangSC-Medium";
+}

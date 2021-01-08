@@ -4,6 +4,7 @@ import router from './router'
 import store from './store'
 import './common/index' //全局引入组件
 import less from 'less'
+import './assets/iconfont/iconfont.css' //引入阿里巴巴矢量图标
 
 
 import Antd from 'ant-design-vue'

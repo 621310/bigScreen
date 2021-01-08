@@ -1,0 +1,63 @@
+body {
+  font-size: 12px !important;
+  background-color: @pageBackColor;
+  line-height: 1.16;
+  /*隐藏右边滚动条*/
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  /*页面淡入淡出*/
+  .router-fade-enter-active, .router-fade-enter-active {
+    transition: opacity 1s;
+  }
+
+ .router-fade-enter, .router-fade-leave-active {
+    opacity: 0;
+  }
+
+  #app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #2c3e50;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  a {
+    color: inherit;
+  }
+  input,textarea, select {
+    border: none;
+  }
+
+  /*修改placeholder样式*/
+  input::-webkit-input-placeholder, /* WebKit browsers */
+  input:-moz-placeholder, /* Mozilla Firefox 4 to 18 */
+  input::-moz-placeholder, /* Mozilla Firefox 19+ */
+  input:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #a3a9b8;
+  }
+
+  input[type="radio"],
+  input[type="checkbox"] {
+    display: none;
+  }
+
+
+
+  /*干掉input[search]默认的clear button*/
+  input[type='radio'],
+  input[type="search"]::-webkit-search-decoration,
+  input[type="search"]::-webkit-search-cancel-button,
+  input[type="search"]::-webkit-search-results-button,
+  input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+}
