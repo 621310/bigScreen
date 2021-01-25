@@ -2,6 +2,8 @@
 //官方vue.config.js 参考文档 https://cli.vuejs.org/zh/config/#css-loaderoptions
 // 这里只列一部分，具体配置参考文档
 
+const path = require('path');
+const resolve = (dir) => path.join(__dirname, dir);
 module.exports = {
 
     // 部署生产环境和开发环境下的URL。
@@ -35,6 +37,25 @@ module.exports = {
      *  有了map就可以像未加密的代码一样，准确的输出是哪一行哪一列有错。
      * */
     productionSourceMap: false,
+    css: {
+        requireModuleExtension: true,
+        loaderOptions: {
+            postcss: {
+                plugins: [
+                    require('autoprefixer')({
+                        overrideBrowserslist: ['Android >= 4.0', 'iOS >= 7']
+                    }),
+                    //px to rem 适配
+                    require('postcss-pxtorem')({
+                        rootValue: 15.5, //换算的基数
+                        propList: ['*'],
+                        unitPrecision: 3,
+                        minPixelValue: 2
+                    })
+                ]
+            }
+        }
+    },
 
     // 它支持webPack-dev-server的所有选项
     devServer: {
@@ -58,5 +79,11 @@ module.exports = {
                 target: "<other_url>"
             }
         }
-    }
+    },
+    pluginOptions: { // 第三方插件配置
+        'style-resources-loader': {
+            preProcessor: 'less',
+            patterns: [path.resolve(__dirname, 'src/styles/variables.less')] // less所在文件路径
+        }
+    },
 };

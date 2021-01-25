@@ -1,15 +1,19 @@
 <template>
     <div>
-        分类
+        <ImgUpload></ImgUpload>
     </div>
 </template>
 
 <script>
+    import ImgUpload from "../../components/ImgUpload";
     export default {
-        name: "classification"
+        components:{
+            ImgUpload
+        }
+
     }
 </script>
 
-<style scoped>
+<style scoped lang="less">
 
 </style>

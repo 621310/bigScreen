@@ -7,6 +7,7 @@
 </template>
 
 <style lang="less">
+  @import "./styles/common.less";
 #app{
   width: 100%;
   height: 100%;
