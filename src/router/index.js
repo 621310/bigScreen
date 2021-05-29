@@ -11,6 +11,12 @@ Vue.use(VueRouter)
       component: () => import( '../views/blog/login.vue')
     },
     {
+      path: '/login',
+      name: 'login-web',
+      component: () => import( '../views/login/index.vue')
+    },
+
+    {
       path: '/index',
       name: 'index',
       component: () => import(/* webpackChunkName: "about" */ '../views/blog/index.vue'),
@@ -80,6 +86,11 @@ Vue.use(VueRouter)
       path: '/gdMap_demo',
       name: 'gdMap_demo',
       component: () => import( '../views/gdMap_demo.vue')
+    },
+    {
+      path: '/schedule',
+      name: 'schedule',
+      component: () => import( '../views/schedule')
     },
 ]
 
